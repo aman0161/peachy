@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Peachy</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="css/custom.css" type="text/css">
+		<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	</head>
+	<body class="gray">
+		<div class="overlays"></div>
+		<div id="dashboard">
+			<div class="mob-toggle">
+				<i class="fa fa-chevron-circle-right"></i>
+			</div>
+			<div id="bars" class="options toggle-mob">
+				<div class="mobile-view">
+					<div class="header">
+						<div class="logo">
+							<a href="#" class="normal"><img src="images/logo.svg" alt="" /></a>
+							<a href="#" class="mobile"><img src="images/small-logo.svg" alt="" /></a>
+						</div>
+						<div class="new">
+							<a href="new.html" class="dash-btn"><i class="fa fa-plus"></i> <span>New</span></a>
+						</div>
+					</div>
+					<div class="option">					
+						<div class="welcome single">
+							<h3>Welcome</h3>
+							<ul>
+								<li><a href="get-started.html"><i class="fa fa-star"></i> <span>Getting Started</span></a></li>
+							</ul>
+						</div>
+						<div class="manage single">
+							<h3>Manage</h3>
+							<ul>
+								<li><a href="notification.html"><i class="fa fa-bell"></i> <span>Notifications</span></a></li>
+								<li><a href="traffic-feed.html"><i class="fa fa-bolt"></i> <span>Traffic Feed</span></a></li>
+							</ul>
+						</div>
+						<div class="account single">
+							<h3>Account</h3>
+							<ul>
+								<li class="active"><a href="pexel-install.html"><i class="fa fa-code"></i> <span>Pixel Install</span></a></li>
+								<li><a href="settings.html"><i class="fa fa-gear"></i> <span>Settings</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<button class="dash-btn"><i class="fa fa-sign-in"></i> <span>Logout</span></button>
+					</div>
+				</div>
+			</div>
+			<div id="admin">
+				<div class="admin-container">
+					<div id="pixels" class="para">
+						<div class="copyboard shadow-bg">
+							<div class="header">
+								<div class="img col-xs-3">
+									<img src="images/diamond.png" alt="" />
+								</div>
+								<div class="install col-xs-9">
+									<h3>Install The Proof Pixel</h3>
+									<p>You'll only have to do this once across your entire site and then you'll be ready to roll.</p>
+								</div>
+							</div>
+							<div class="body boxer">
+								<div class="content">
+									<!-- Target -->
+									<textarea onClick="this.setSelectionRange(0, this.value.length)" id="bar" col="80" readonly="" rows="9"><!-- Proof | usepeachy.com -->
+<script id=proof-script>!function(){function b(){var a=(new Date).getTime(),b=document.createElement('script');b.type='text/javascript',b.async=!0,b.src='https://cdn.getmoreproof.com/embed/latest/proof.js?'+a;var c=document.getElementsByTagName('script')[0];c.parentNode.insertBefore(b,c)}var a=window;a.attachEvent?a.attachEvent('onload',b):a.addEventListener('load',b,!1),window.proof_config={acc:'ze7mIT1XPXdAaXx2VqVhYvVA6xk2', v:'1.1'}}()</script>
+<!-- End Proof --></textarea>
+
+									<!-- Trigger -->
+									<button class="btn bttn copy-btn" data-clipboard-action="copy" data-clipboard-target="#bar" onclick="reClass()">
+										<i class="fa fa-copy"></i><span class="copy">Copy to Clipboard</span>
+										<i class="fa fa-check"></i><span class="copied">Copied!</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fa-chevron-circle-right").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".overlays").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".option .single ul li a").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			
+			$(".copy-btn").click(function(){
+				$(".copy-btn").addClass('change');				
+			});			
+			
+			var clipboard = new Clipboard('.copy-btn');
+			clipboard.on('success', function(e) {
+			  console.info('Action:', e.action);
+			  console.info('Text:', e.text);
+			  console.info('Trigger:', e.trigger);
+			  e.clearSelection();
+			});
+			clipboard.on('error', function(e) {
+			  console.error('Action:', e.action);
+			  console.error('Trigger:', e.trigger);
+			});
+			
+		});
+		
+		function reClass() {
+				setTimeout(function(){ $('.copy-btn').removeClass('change'); }, 1000);
+		}
+		
+	</script>	
+	</body>	
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Peachy</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="css/custom.css" type="text/css">
+		<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	</head>
+	<body class="gray">
+		<div class="overlays"></div>
+		<div id="dashboard">
+			<div class="mob-toggle">
+				<i class="fa fa-chevron-circle-right"></i>
+			</div>
+			<div id="bars" class="options toggle-mob">
+				<div class="mobile-view">
+					<div class="header">
+						<div class="logo">
+							<a href="#" class="normal"><img src="images/logo.svg" alt="" /></a>
+							<a href="#" class="mobile"><img src="images/small-logo.svg" alt="" /></a>
+						</div>
+						<div class="new">
+							<a href="new.html" class="dash-btn"><i class="fa fa-plus"></i> <span>New</span></a>
+						</div>
+					</div>
+					<div class="option">					
+						<div class="welcome single">
+							<h3>Welcome</h3>
+							<ul>
+								<li><a href="get-started.html"><i class="fa fa-star"></i> <span>Getting Started</span></a></li>
+							</ul>
+						</div>
+						<div class="manage single">
+							<h3>Manage</h3>
+							<ul>
+								<li><a href="notification.html"><i class="fa fa-bell"></i> <span>Notifications</span></a></li>
+								<li><a href="traffic-feed.html"><i class="fa fa-bolt"></i> <span>Traffic Feed</span></a></li>
+							</ul>
+						</div>
+						<div class="account single">
+							<h3>Account</h3>
+							<ul>
+								<li><a href="pexel-install.html"><i class="fa fa-code"></i> <span>Pixel Install</span></a></li>
+								<li class="active"><a href="settings.html"><i class="fa fa-gear"></i> <span>Settings</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<button class="dash-btn"><i class="fa fa-sign-in"></i> <span>Logout</span></button>
+					</div>
+				</div>
+			</div>
+			<div id="admin">
+				<div class="admin-container">
+					<div id="setting">
+						<div class="options">
+							<h3 class="heading">Account Settings</h3>
+							<div class="single-option accSetting shadow-bg">
+								<div  class="s-heading">
+									<h4>Login Methods</h4>
+								</div>								
+								<div class="accDetails logins">
+									<div class="single-login google">
+										<div class="pull-left accName">
+											<h5>Google Login</h5>
+										</div>
+										<div class="pull-right loginBtn">
+											<button class="btn btn-mute"><i class="fa fa-bolt"></i> <span>Link Account</span></button>
+										</div>
+									</div>
+									<div class="single-login google">
+										<div class="pull-left accName">
+											<h5>Facebook Login</h5>
+										</div>
+										<div class="pull-right loginBtn">
+											<button class="btn btn-mute"><i class="fa fa-bolt"></i> <span>Link Account</span></button>
+										</div>
+									</div>
+									<div class="single-login google">
+										<div class="pull-left accName">
+											<h5>Username & Password <span class="accAct">Active</span></h5>
+										</div>
+										<div class="pull-right loginBtn">
+											<button class="btn btn-mute"><i class="fa fa-pencil"></i> <span>Email</span></button>
+											<button class="btn btn-mute"><i class="fa fa-pencil"></i> <span>Password</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="options">
+							<h3 class="heading">Language Defaults</h3>
+							<div class="single-option langDef boxer shadow-bg">
+								<p>To translate English words into another language update the fields below. Leave them blank if you prefer to keep them in English.</p>
+								<hr />
+								<div class="langForm">
+									<form>
+										<div class="col-xs-6 field gapPadd-Left">
+											<label for="From">Translate "From"</label>
+											<input type="text" name="from" id="From" Placeholder="From" required/>
+										</div>
+										<div class="col-xs-6 field gapPadd-Right">
+											<label for="Someone">Translate "Someone"</label>
+											<input type="text" name="someone" id="Someone" Placeholder="Someone" required/>
+										</div>
+										<div class="col-xs-12 field gapPadd-Left">
+											<label for="Time">Translate "[Time] ago"</label>
+											<select>
+												<option select="selected">English</option>												
+												<option>Chinese</option>
+												<option>Czech</option>
+											</select>
+										</div>
+										<div class="col-xs-12 text-right padd-off">
+											<input type="submit" class="btn bttn red" name="" value="Save Changes" />
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="options">
+							<h3 class="heading">Your Plan</h3>
+							<div class="single-option plans shadow-bg">
+								<div  class="s-heading">
+									<div class="pull-left">
+										<h4>Plan</h4>
+									</div>
+									<div class="pull-right loginBtn">
+										<button class="btn btn-mute"><i class="fa fa-pencil"></i></button>
+									</div>
+								</div>
+								<div class="plansDetails">
+									<div class="single-option">
+										<div class="col-xs-6 plan padd-off">
+											<h5>BUSINESS</h5>
+										</div>
+										<div class="col-xs-6 price padd-off">
+											<h5>$129.00 / mo</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="single-option plans shadow-bg">
+								<div  class="s-heading">									
+									<h6>Unique Visitors In This Billing Period </h6>																		
+								</div>
+								<div class="plansDetails">
+									<div class="single-option graphs">
+										<div class="progress">
+										  <div class="progress-bar" role="progressbar" style="width: 7%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">7%</div>
+										</div>
+										<div class="col-xs-4 padd-off stats">
+											<h2>3,488</h2>
+											<p class="lalel">Unique Visitors Tracked</p>
+										</div>
+										<div class="col-xs-4 padd-off stats">
+											<h2>7%</h2>
+											<p class="lalel">Used</p>
+										</div>
+										<div class="col-xs-4 padd-off stats">
+											<h2>50,000</h2>
+											<p class="lalel">Unique Visitors Alotted</p>
+										</div>
+										<div class="col-xs-12 padd-off helper">
+											<p>12 days left in this billing cycle.</p>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+						<div id="Billing" class="options">
+							<h3 class="heading">Billing</h3>
+							<div class="single-option plans shadow-bg">
+								<div  class="s-heading">
+									<div class="pull-left">
+										<h4>Payment Info</h4>
+									</div>
+									<div class="pull-right loginBtn">
+										<button class="btn btn-mute"><i class="fa fa-pencil"></i></button>
+									</div>
+								</div>
+								<div  class="s-heading">									
+									<h6>You have one card on file.</h6>																		
+								</div>								
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fa-chevron-circle-right").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".overlays").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".option .single ul li a").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+		});
+	</script>
+	</body>	
+</html>

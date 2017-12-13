@@ -1,0 +1,175 @@
+/*======Mac====*/
+@media screen and (max-width:1919px){
+.title{font-size:50px;}
+.log-up {padding-top:0px;}	
+}
+
+/*======Desktop====*/
+@media screen and (max-width:1599px){
+#left-side{width:30%;}
+#right-side{width:70%;}	
+}
+
+/*======Small Desktop and Laptop====*/
+@media screen and (max-width:1439px){
+
+}
+
+/*======Small Laptop====*/
+@media screen and (max-width:1365px){
+	
+}
+
+/*======Ipad Landscape====*/
+@media screen and (max-width:1279px){
+.title{font-size:45px;}	
+#left-side{width:35%;}
+#right-side{width:65%;}
+.admin-container{width:600px;}
+#admin{width:100%}
+#admin p{font-size:16px;line-height:23px;margin-bottom:20px;}
+#admin .header h1{margin-bottom:15px;}
+#traffic .traffic-lists .singleUser .website{display:inline-block;width:100%;margin-top:5px}
+#userDetail{width:500px;}
+#userDetail .userDetail .proImage{padding:20px 0}
+#userDetail .userDetail .proImage img{width:70px;}
+#userDetail .userDetail .proImage .name{font-size:25px;}
+
+}
+
+/*======Ipad Portrait====*/
+@media screen and (max-width:1023px){
+.log-up .form{width:480px;}
+#admin p{font-size:15px;line-height:20px}
+#bars{width:220px;}
+#dashboard{padding-left:220px;}
+.admin-container{width:100%;padding:0 45px;}
+#admin .body .inst{margin-top:40px;}
+#admin .body .video h1{font-size:15px;}
+#admin .header h1{font-size:30px;}
+#bars .option .single ul li a{font-size:16px;padding-left:48px;}
+#bars .option .single ul li a i{top:15px;font-size:15px;}
+#pixels{width:100%;float:left;}
+#pixels .copyboard .header{padding:20px 0}
+#pixels .copyboard .body .content textarea{height:300px;}
+
+}
+
+/*======Mobile Phones====*/
+@media screen and (max-width:767px){
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"]{
+	padding:5px 15px;
+	height:50px;
+}
+hr{margin:15px 0}
+.btn-mute{font-size:13px;padding:4px 12px;}
+.submit-btn{height:52px;font-size:18px}
+#left-side{display:none;}
+#right-side{margin-left:0;width:100%;}
+.log-up  .register input[type="submit"]{background-position:73% 16px}
+.log-up  .other-signUp button{height:52px;font-size:18px;}
+#admin .body .video h1{padding:15px 20px;}
+#bars .option .single ul li a{padding:10px 0;padding-left:48px;}
+#bars .option .single ul li a i{top:13px;}
+#admin .body .inst{margin-bottom:40px;}
+#bars{overflow-y:scroll;}
+#bars .mobile-view{height:750px;position:relative}
+#bars .footer{padding:15px 0;}
+.admin-container{padding:0 25px}
+#admin .body .video h1{padding:10px 15px;}
+#admin .body .video{border-radius:7px;}
+#admin .body .inst{margin-top:30px;}
+#admin .heading{font-size:16px;}
+#admin p{font-size:14px;}
+
+#dashboard input[type="text"],
+#dashboard input[type="email"],
+#dashboard input[type="password"],
+#dashboard input[type="search"],
+#dashboard input[type="tel"]{padding:6px 14px;}
+.boxer{padding:15px;}
+#setting .options .single-option .s-heading{padding:10px 15px;}
+#setting .options .plans .s-heading h4{margin:6px 0}
+#setting .options .single-option .s-heading h4{font-size:15px;}
+#setting .options .single-option .accDetails .single-login{padding:10px 15px}
+#setting .options .single-option .accDetails .single-login .accName h5{font-size:15px;}
+#setting .options .single-option .accDetails .single-login .accName .accAct{font-size:10px;}
+#setting .options .single-option .s-heading h6{font-size:16px;padding:8px 0}
+#setting .options .plans .plansDetails .single-option{padding:15px;}
+#setting .options .plans .plansDetails .single-option h5{font-size:15px;}
+
+#pixels .copyboard .body .content textarea{height:400px;}
+
+}
+
+@media screen and (max-width:639px){
+#bars{padding:0 10px;left:-100%;z-index:9999}
+#dashboard{padding:0;padding-top:50px;}
+.mob-toggle{display:block}
+.open{left:0!important}
+.bttn{font-size:15px;}
+.title{font-size:35px;}
+#right-side .header{display:none}
+#right-side{padding-top:40px;}
+
+.log-up  .form h5{font-size:17px;}
+.log-up  .register{padding:20px 25px}
+.log-up  .other-signUp{padding:20px 25px}
+#dashboard label{font-size:15px;}
+#setting .options .plans .plansDetails .graphs .stats h2{font-size:20px;}
+#pixels .copyboard .body .content textarea{height:auto;}
+#traffic .traffic-lists .singleUser h6 span{margin:8px;display:inline-block;margin-bottom:0}
+#userDetail{width:350px;}
+#userDetail .userDetail .graDetail .singleDet h2{font-size:20px;}
+#userDetail .userDetail .graDetail .singleDet{padding:15px 0}
+#userDetail .userDetail .graDetail .singleDet p{min-height:31px;}
+}
+
+@media screen and (max-width:479px){
+.admin-container{padding:0 20px;}
+.log-up  .form{width:100%;float:left;}
+.log-up  .register{width:90%;margin-left:5%;}
+.log-up  .register input[type="submit"]{font-size:16px;letter-spacing:1px;background-size:18px 18px}
+.log-up  .other-signUp{width:90%;margin-left:5%;}
+.log-up  .other-signUp button{font-size:16px;letter-spacing:1px}
+.log-up  .other-signUp button i{font-size:20px;}
+#admin .header h1{font-size:25px;}
+#admin p{letter-spacing:normal}
+#admin .body .inst{margin-top:20px;padding:15px 20px;}
+#bars .header .logo img{width:100px;}
+#bars .header .logo{padding:15px 0}
+#userDetail{width:280px;}
+#userDetail .userDetail .proImage img{width:50px;}
+#userDetail .userDetail .proImage{padding:15px 0;padding-bottom:0;}
+#userDetail .userDetail .proImage .name{font-size:16px;margin-top:10px;}
+#userDetail .userDetail .graDetail{padding:10px 0;border-top:none}
+#userDetail .userDetail .graDetail .singleDet{padding:5px 0;width:100%;padding-bottom:0}
+#userDetail .userDetail .graDetail .singleDet:last-child{padding-bottom:5px;}
+#userDetail .userDetail .graDetail .singleDet h2{font-size:15px;}
+#userDetail .userDetail .graDetail .singleDet p{min-height:auto;margin-top:0}
+#userDetail .webPage-Detail .activity .diff{width:100%}
+#userDetail .webPage-Detail .photos li{width:60px;height:60px;}
+#userDetail .webPage-Detail .single-details{padding:15px;}
+#userDetail .webPage-Detail .single-details h3{font-size:14px;}
+#traffic .traffic-lists .singleUser{padding:12px 15px;}
+}
+
+@media screen and (max-width:359px){
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"]{
+	height:45px;
+	font-size:14px;
+}
+#dashboard .lalel{font-size:13px;line-height:normal;padding-top:5px;}
+.title{font-size:30px;letter-spacing:normal}
+.submit-btn{margin-top:15px;height:48px;}
+.log-up  .register,
+.log-up  .other-signUp{padding:10px 15px}
+.log-up  .other-signUp button{height:48px;}
+#setting .options .langDef .langForm  .col-xs-6{width:100%;}
+}

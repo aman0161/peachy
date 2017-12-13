@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Peachy</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="css/custom.css" type="text/css">
+		<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	</head>
+	<body class="gray">
+		<div id="userDetail" class="newWebHooks">
+			<div class="webHook-details">
+				<div class="hookHeader">
+					<h2>Select an existing Custom webhook or create a new one:</h2>
+				</div>
+				<div class="AddHook">
+					<div class="HookSearch">
+						<form>
+							<input type="search" name="" placeholder="Search Your Webhooks..." />
+						</form>
+					</div>
+					<div class="newHook">
+						<button class="dash-btn"><i class="fa fa-plus"></i> <span>New Webhook</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlays"></div>
+		<div id="dashboard">
+			<div class="mob-toggle">
+				<i class="fa fa-chevron-circle-right"></i>
+			</div>
+			<div id="bars" class="options toggle-mob">
+				<div class="mobile-view">
+					<div class="header">
+						<div class="logo">
+							<a href="#" class="normal"><img src="images/logo.svg" alt="" /></a>
+							<a href="#" class="mobile"><img src="images/small-logo.svg" alt="" /></a>
+						</div>
+						<div class="new">
+							<a href="new.html" class="dash-btn"><i class="fa fa-plus"></i> <span>New</span></a>
+						</div>
+					</div>
+					<div class="option">					
+						<div class="welcome single">
+							<h3>Welcome</h3>
+							<ul>
+								<li><a href="get-started.html"><i class="fa fa-star"></i> <span>Getting Started</span></a></li>
+							</ul>
+						</div>
+						<div class="manage single">
+							<h3>Manage</h3>
+							<ul>
+								<li class="active"><a href="../notification.html"><i class="fa fa-bell"></i> <span>Notifications</span></a></li>
+								<li><a href="traffic-feed.html"><i class="fa fa-bolt"></i> <span>Traffic Feed</span></a></li>
+							</ul>
+						</div>
+						<div class="account single">
+							<h3>Account</h3>
+							<ul>
+								<li><a href="pexel-install.html"><i class="fa fa-code"></i> <span>Pixel Install</span></a></li>
+								<li><a href="settings.html"><i class="fa fa-gear"></i> <span>Settings</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<button class="dash-btn"><i class="fa fa-sign-in"></i> <span>Logout</span></button>
+					</div>
+				</div>
+			</div>
+			<div id="admin">
+				<div class="admin-container">
+					<div id="newNotice">
+						<div class="newBody">
+							<div class="header">
+								<h2>Add Proof To Your Website</h2>
+								<div class="iconsBtn">
+									<ul>
+										<li><i class="iconsBtn-close"></i></li>
+										<li><i class="iconsBtn-launch"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="tabSteps">								
+								<ul id="myTab">
+									<li class="active">
+										<a href="#step1" data-toggle="tab">
+											<span class="Step">1</span>Capture
+										</a>
+									</li>
+									<li>
+										<a href="#step2" data-toggle="tab">
+											<span class="Step">2</span>Display
+										</a>
+									</li>
+									<li>
+										<a href="#step3" data-toggle="tab">
+											<span class="Step">3</span>Message
+										</a>
+									</li>
+									<li>
+										<a href="#step4" data-toggle="tab">
+											<span class="Step">4</span>Customize
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tabBody" id="myTabContent">
+								<div id="step1" class="tab-pane capture active tabWrapper">
+									<div class="tabContent">
+										<div class="upper">
+											<div class="siteDetail">
+												<div class="dis-overlay"></div>
+												<h3>Where Are You Capturing Your Leads?</h3>
+												<div class="panelArea">
+													<p>Choose the page where you are capturing conversions. This page must have an email form field with your pixel installed.</p>
+													<form>
+														<input type="text" name="" placeholder="" />
+													</form>
+													<div class="currentStatus">
+														<div class="define"><i class="fa fa-circle tgreen"></i> <span>Active URL</span></div>
+														<div class="define"><i class="fa fa-circle tp-green"></i> <span>Last seen over 24 hrs ago</span></div>
+														<div class="define"><i class="fa fa-circle tyellow"></i> <span>Last seen over 24 hrs ago</span></div>
+														<div class="define"><i class="fa fa-circle tred"></i> <span>Invalid URL</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="webhook" class="webhooks lower">
+											<p>Don't think Auto Lead Capture will work for your setup?</p>										
+											<button class="dash-btn"> <i class="fa fa-cube"></i><span>Use A Webhook Integration</span></button>
+											<div class="siteDetail">
+												<h3>Webhook Integration</h3>
+												<div class="panelArea">
+													<h4>What type of webhook would you like to use?</h4>
+													<ul>
+														<li><span><img src="images/infusionsoft.png" alt="" /></span> Infusionsoft</li>
+														<li><span><img src="images/clickfunnels.png" alt="" /></span> Clickfunnels</li>
+														<li><span><img src="images/webhook.png" alt="" /></span> Calendly</li>
+														<li><span><img src="images/webhook.png" alt="" /></span> ScheduleOnce</li>
+														<li><span><img src="images/webhook.png" alt="" /></span> Custom Webhook</li>
+													</ul>
+												</div>
+											</div>
+										</div>										
+									</div>
+									<div class="tabFooter">										
+										<ul>
+											<li class="pull-right">
+												<a href="javascript:void(0);" class="submit-btn">
+													<span>Next</span> <i class="fa fa-arrow-right"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div id="step2" class="tab-pane display tabWrapper">
+									<div class="tabContent">
+										<div class="upper">
+											<div class="siteDetail">
+												<div class="dis-overlay"></div>
+												<h3>Where would you like to display your customer activity?</h3>
+												<div class="panelArea basic">
+													<p>Choose the page where you are capturing conversions. This page must have an email form field with your pixel installed.</p>
+													<form>
+														<input type="text" name="" placeholder="" />
+													</form>
+													<div class="currentStatus">
+														<div class="define"><i class="fa fa-circle tgreen"></i> <span>Active URL</span></div>
+														<div class="define"><i class="fa fa-circle tp-green"></i> <span>Last seen over 24 hrs ago</span></div>
+														<div class="define"><i class="fa fa-circle tyellow"></i> <span>Last seen over 24 hrs ago</span></div>
+														<div class="define"><i class="fa fa-circle tred"></i> <span>Invalid URL</span></div>
+													</div>
+												</div>
+												<div class="panelArea advanced" style="display:none">
+													<p>Type a full or partial url where you would like to display notifications.</p>
+													<form>
+														<div class="displayURL">
+															<label>Display URL</label>
+															<input type="text" name="" placeholder="" />
+														</div>
+														<div class="match">
+															<label>URL Match Type</label>												
+															<select>
+																<option></option>
+																<option>Contains</option>
+																<option>Exact Match</option>
+																<option>Starts With</option>
+																<option>Ends With</option>
+															</select>
+														</div>
+													</form>
+												</div>
+												<div class="switched shortHeader">													
+													<div class="list-group">													
+														<div class="list-group-item">
+															<label class="left" for="TriSeaSuccess">Basic</label>
+															<div class="TriSea-technologies-Switch center">
+																<input id="TriSeaSuccess" name="TriSea1" type="checkbox"/>
+																<label for="TriSeaSuccess"></label>
+															</div>
+															<label class="right" for="TriSeaSuccess">Advanced</label>
+														</div>													
+													</div>													
+												</div>
+											</div>																						
+										</div>																				
+									</div>
+									<div class="tabFooter">										
+										<ul>
+											<li class="pull-left back">
+												<a href="javascript:void(0);" class="submit-btn">
+													<span>Back</span></i>
+												</a>
+											</li>
+											<li class="pull-right">
+												<a href="javascript:void(0);" class="submit-btn">
+													<span>Next</span> <i class="fa fa-arrow-right"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div id="step3" class="tab-pane message tabWrapper">
+									<div class="tabContent">
+										<div class="upper">
+											<div class="siteDetail">
+												<div class="dis-overlay"></div>
+												<h3>Messaging</h3>												
+												<div class="panelArea advanced">
+													<p>What do you want your notification to say?</p>
+													<form>
+														<div class="displayURL">
+															<label>Enter A Message</label>
+															<input type="text" name="" placeholder="" />
+														</div>														
+													</form>
+												</div>												
+											</div>
+											<div class="ng-scope">
+												
+											</div>
+										</div>																				
+									</div>
+									<div class="tabFooter">										
+										<ul>
+											<li class="pull-left back">
+												<a href="javascript:void(0);" class="submit-btn">
+													<span>Back</span></i>
+												</a>
+											</li>
+											<li class="pull-right">
+												<a href="javascript:void(0);" class="submit-btn">
+													<span>Next</span> <i class="fa fa-arrow-right"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fa-chevron-circle-right").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".overlays").click(function(){
+				$("#bars").removeClass("open");
+				$(".overlays").removeClass("views");
+				$("body").removeClass("scroll-off");
+			});
+			$(".option .single ul li a").click(function(){
+				$("#bars").removeClass("open");
+				$(".overlays").removeClass("views");
+				$("body").removeClass("scroll-off");
+			});
+			$("#webhook .dash-btn").click(function(){
+				$('#webhook').toggleClass("view-hook");				
+				$('.capture .upper .siteDetail').toggleClass("disable");
+				$('.webhooks .dash-btn').toggleClass("btn-active");
+			});
+			
+			$('.webhooks ul li').click(function(e) {
+				$('.webhooks ul li').removeClass('active');
+				var $this = $(this);
+				if (!$this.hasClass('active')) {
+					$this.addClass('active');
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".webhooks ul li").click(function(){
+				$("#userDetail").addClass("OpenRight");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".overlays").click(function(){
+				$("#userDetail").removeClass("OpenRight");
+				$(".overlays").removeClass("views");
+				$("body").removeClass("scroll-off");
+				$('.webhooks ul li').removeClass('active');
+			});
+			$("#TriSeaSuccess").click(function(){
+				$(".display .panelArea").toggle();				
+			});
+		});
+	</script>
+	</body>	
+</html>

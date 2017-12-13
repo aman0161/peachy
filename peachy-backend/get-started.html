@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Peachy</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="css/custom.css" type="text/css">
+		<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	</head>
+	<body class="gray">
+		<div class="overlays"></div>
+		<div id="dashboard">
+			<div class="mob-toggle">
+				<i class="fa fa-chevron-circle-right"></i>
+			</div>
+			<div id="bars" class="options toggle-mob">
+				<div class="mobile-view">
+					<div class="header">
+						<div class="logo">
+							<a href="#" class="normal"><img src="images/logo.svg" alt="" /></a>
+							<a href="#" class="mobile"><img src="images/small-logo.svg" alt="" /></a>
+						</div>
+						<div class="new">
+							<a href="new.html" class="dash-btn"><i class="fa fa-plus"></i> <span>New</span></a>
+						</div>
+					</div>
+					<div class="option">					
+						<div class="welcome single">
+							<h3>Welcome</h3>
+							<ul>
+								<li class="active"><a href="get-started.html"><i class="fa fa-star"></i> <span>Getting Started</span></a></li>
+							</ul>
+						</div>
+						<div class="manage single">
+							<h3>Manage</h3>
+							<ul>
+								<li><a href="notification.html"><i class="fa fa-bell"></i> <span>Notifications</span></a></li>
+								<li><a href="traffic-feed.html"><i class="fa fa-bolt"></i> <span>Traffic Feed</span></a></li>
+							</ul>
+						</div>
+						<div class="account single">
+							<h3>Account</h3>
+							<ul>
+								<li><a href="pexel-install.html"><i class="fa fa-code"></i> <span>Pixel Install</span></a></li>
+								<li><a href="settings.html"><i class="fa fa-gear"></i> <span>Settings</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<button class="dash-btn"><i class="fa fa-sign-in"></i> <span>Logout</span></button>
+					</div>
+				</div>
+			</div>
+			<div id="admin">
+				<div class="admin-container">
+					<div id="get-started">
+						<div class="header">
+							<h1>Welcome to Peachy</h1>
+							<p>Our mission is to help you grow your business using honest marketing strategies. We are continually developing Proof into the platform that will help you build massive trust with your audience and drive higher conversions.</p>
+						</div>
+						<div class="body">
+							<div class="video shadow">
+								<h1>Quickstart Guide</h1>
+								<div class="iframe">
+									<img src="images/video.jpg" alt="" />
+								</div>
+							</div>
+							<div class="inst shadow">
+								<p>Each week we'll be rolling out new features to make selling online easier and more efficient. <a href="#">Checkout our changelog for the latest updates.</a></p>
+							</div>
+						</div>						
+					</div>					
+				</div>
+			</div>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fa-chevron-circle-right").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".overlays").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+			$(".option .single ul li a").click(function(){
+				$("#bars").toggleClass("open");
+				$(".overlays").toggleClass("views");
+				$("body").toggleClass("scroll-off");
+			});
+		});
+	</script>
+	</body>	
+</html>
