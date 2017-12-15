@@ -5,6 +5,7 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="icon" href="images/favicon.png" type="images/png" sizes="16x16"> 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -28,15 +29,16 @@
 					</div>
 				</div>
 				<div id="signIn" class="log-up">
-					<div class="form">
+					<div id="norWay" class="form">
 						<h1 class="title">Welcome to Peachy</h1>						
 						<h5>Let's Grow Your Business</h5>
-						<div class="register">
-							<form>								
+						<div class="register">							
+							<form>
 								<input type="email" name="email" value="" placeholder="Your Email" required/>
 								<input type="password" name="password" value="" placeholder="Your Password" required/>
-								<input type="submit" name="submit" value="Sign In" class="submit-btn" />
-							</form>
+								<div class="forPass"><a href="#">Recover My Password</a></div>								
+								<button type="submit" name="submit" class="submit-btn">Sign In <i class="fa fa-arrow-right"></i></button>								
+							</form>													
 						</div>
 						<div class="other-signUp">
 							<p>Or Sign UP With One Click</p>
@@ -44,10 +46,40 @@
 							<button class="submit-btn facebook"><i class="fa fa-facebook-square"></i> <span>Sign In With Facebook</span></button>
 						</div>
 					</div>
+					<div id="recoPass" class="form" style="display:none">
+						<h1 class="title">Password Recovery</h1>						
+						<h5>We'll send you a reset email</h5>
+						<div class="register">
+							<div class="sendMail">
+								<form id="passRecover">
+									<input type="email" name="email" value="" placeholder="Your Email" required/>
+									<button type="submit" name="submit" class="submit-btn passRecover">Send Password <i class="fa fa-paper-plane"></i></button>
+								</form>
+							</div>															
+							<div class="sucMessage" style="display:none">
+								<h1 class="title">Success</h1>	
+								<h5>A temporary password has been sent to </h5>
+								<code class="ng-binding">aman@gmail.com</code>
+								<button type="submit" name="submit" class="submit-btn passRecover">Sign in <i class="fa fa-arrow-right"></i></button>
+							</div>
+						</div>						
+					</div>
 				</div>
 			</div>
 		</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".forPass").click(function(){
+				$("#norWay").hide();
+				$("#recoPass").show();
+			});
+			$(".passRecover").click(function(){
+				$(".sendMail").toggle();
+				$(".sucMessage").toggle();
+			});
+		});
+	</script>
 	</body>	
 </html>
